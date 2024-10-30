@@ -16,7 +16,7 @@ To guide secure development, several key knowledge-based standards exist. The OW
 Another essential resource, the Web Security Testing Guide (WSTG), produced by the OWASP project, provides a comprehensive methodology for testing the security of web applications, covering everything from client-side checks to server configuration and beyond. 
 However, for early-stage developers, the sheer number of frameworks, checklists, and testing methods can be overwhelming and even contradictory, with each framework emphasizing different security phases, methods, and terminology. This multiplicity of approaches often presents a barrier to effective implementation, particularly when attempting to establish a foundational security approach within the software development lifecycle.
 
- Purpose of this Model
+ **Purpose of this Model**
 The purpose of this Model is to present a cohesive roadmap for integrating security into the development process through a Secure Software Development Lifecycle (SSDLC). By reviewing the most impactful frameworks and distilling essential tools, techniques, and methods, this paper seeks to streamline the adoption of SSDLC practices. The goal is to guide developers—especially those new to security—on effectively incorporating secure practices into the SDLC, creating a robust foundation to defend against modern threats.
 
 
@@ -34,14 +34,13 @@ It’s often normal for developers, solution architects and Devsec professionals
 
 Writing the Testing Guide has proven to be a difficult task. It was a challenge to obtain consensus and develop content that allowed people to apply the concepts described in the guide, while also enabling them to work in their own environment and culture. It was also a challenge to change the focus of web application testing from penetration testing to testing integrated in the software development life cycle.
 
-###Measuring Security: The Economics of Insecure Software
-A basic tenet of software engineering is summed up in a quote from Controlling Software Projects: Management, Measurement, and Estimates by Tom DeMarco:
-![You can’t control what you can’t measure.]
+### Measuring Security: The Economics of Insecure Software
+A basic tenet of software engineering is summed up in a quote from Controlling Software Projects: Management, Measurement, and Estimates by Tom DeMarco:  **[You can’t control what you can’t measure.**
 Security testing is no different. Unfortunately, measuring security is a notoriously difficult process.
 One aspect that should be emphasized is that security measurements are about both the specific technical issues (e.g., how prevalent a certain vulnerability is) and how these issues affect the economics of software. Most technical people will at least understand the basic issues, or they may have a deeper understanding of the vulnerabilities. Sadly, few are able to translate that technical knowledge into monetary terms and quantify the potential cost of vulnerabilities to the application owner’s business. Until this happens, CIOs will not be able to develop an accurate return on security investment and, subsequently, assign appropriate budgets for software security.
 While estimating the cost of insecure software may appear a daunting task, there has been a significant amount of work in this direction. In 2018 the Consortium for IT Software Quality summarized:
 
-![…the cost of poor-quality software in the US in 2018 is approximately $2.84 trillion…]
+**…the cost of poor-quality software in the US in 2018 is approximately $2.84 trillion…**
 The framework described in this document encourages people to measure security throughout the entire development process. They can then relate the cost of insecure software to the impact it has on the business, and consequently develop appropriate business processes, and assign resources to manage the risk. Remember that measuring and testing web applications is even more critical than for other software, since web applications are exposed to millions of users through the Internet.
 
 **What is Testing?**
