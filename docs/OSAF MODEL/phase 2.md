@@ -1,0 +1,13 @@
+# Phase 2: Design – Security Enhanced SDLC (SSDLC)
+
+In the Design Phase, security controls are architected based on requirements from the previous phase. This phase incorporates frameworks like OWASP Top 10, SANS/CWE Top 25, and WSTG to build a secure application architecture that mitigates known vulnerabilities, reduces attack surfaces, and enforces secure design principles. Developers and architects must follow security guidelines, employ security-focused tools, and use techniques to create a robust foundation.
+
+| S/No | SSDLC Phase | Key Security Objectives                                         | Implementation Item                               | Code               | Tools & Techniques                                      |
+|------|-------------|------------------------------------------------------------------|---------------------------------------------------|--------------------|---------------------------------------------------------|
+| 1    | Design      | Secure Data Handling and Storage                                 | Design secure storage mechanisms with encryption  | [OWASP Top 10], [SANS 25] | Encryption Libraries (e.g., OpenSSL, BouncyCastle), Data Flow Diagrams |
+| 2    | Design      | Strong Access Control Mechanisms                                 | Implement role-based access controls (RBAC)       | [WSTG], [OWASP Top 10], [SANS 25] | IAM solutions (AWS IAM, Keycloak, Okta), RBAC Frameworks |
+| 3    | Design      | Input Validation and Output Encoding                             | Protect against injection attacks                 | [OWASP Top 10], [SANS 25] | Validation Libraries (Joi, Validator), Content Security Policy (CSP) |
+| 4    | Design      | Secure Session and Authentication Management                     | Implement secure session controls                 | [OWASP Top 10], [WSTG] | Session Management Libraries (Django, Spring Security), MFA (Google Authenticator, Auth0) |
+| 5    | Design      | Threat Model for Core Components                                 | Identify potential threats and address security misconfigurations | [OWASP Top 10], [WSTG], [SANS 25] | Threat Modeling Tools (Microsoft Threat Modeling Tool, OWASP Threat Dragon), Attack Surface Analysis |
+| 6    | Design      | Logging and Monitoring Requirements                              | Implement logging for unauthorized access and errors | [OWASP Top 10], [SANS 25] | Log Aggregation (ELK Stack, Splunk, Graylog), SIEM (IBM QRadar, Splunk) |
+| 7    | Design      | Error Handling and Secure Exception Management                   | Design error handling to prevent information leakage | [OWASP Top 10], [WSTG], [SANS 25] | Error Logging Libraries (Sentry, Rollbar), Custom Error Messages |
