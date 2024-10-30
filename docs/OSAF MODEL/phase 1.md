@@ -15,9 +15,13 @@ In building a secure software development lifecycle (SSDLC), incorporating estab
 | 6    | Requirements Gathering / Business Analysis | Plan for secure configuration management; set guidelines for environment security.                             | Define secure setup for production and staging environments.  | [WSTG] [OWASP] | Configuration management tools                  |
 | 7    | Requirements Gathering / Business Analysis | Evaluate logging and monitoring needs; establish logging practices to detect threats.                           | Plan for robust logging and monitoring mechanisms.            | [OWASP] [SANS] | Logging tools, Monitoring solutions             |
 
-> **Note**: Replace [WSTG], [OWASP], and [SANS 25] with actual reference links or extended descriptions in the repository if desired.
+> **Note**:
 WSTG: Web security testing Guide
+> 
 OWASP: Open web application security project
+
 SANS 25: CWE Top 25
-### Description for GitHub Repository
-The **OSAF-Model: Security Enhanced SDLC** is an adaptable methodology that integrates industry-recognized security standards (WSTG, OWASP Top 10, SANS/CWE Top 25) into each phase of the software development lifecycle. Designed to promote a secure-by-design approach, this framework enables developers and architects to systematically identify, prioritize, and address security risks, with clear objectives and practical tools & techniques. Developed by **Godwin S. Aruga & Other Cybershield community Members**, this model serves as a core component of Cybershield's Open Software Alliance Foundation (OSAF) project.
+
+
+
+The **OSAF-Model: Security Enhanced SDLC** is an adaptable methodology that integrates industry-recognized security standards (WSTG, OWASP Top 10, SANS/CWE Top 25) into each phase of the software development lifecycle. Designed to promote a secure-by-design approach, this framework enables developers and architects to systematically identify, prioritize, and address security risks, with clear objectives and practical tools & techniques. This model serves as a core component of Cybershield's Open Software Alliance Foundation (OSAF) project.
