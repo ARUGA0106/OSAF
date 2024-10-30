@@ -1,17 +1,18 @@
 ## Cost Analysis in Implementing Security Objectives within SSDLC
+
 Integrating security objectives into each phase of the SDLC incurs various costs, including time, resources, business impact, and financial burden. Here's an indepth look at these considerations and effective approaches to balancing costs in each SDLC phase:
 
 
 ### 1.	Requirements Gathering
-**•	Time:** Adding security requirements from the beginning extends planning, as stakeholders need time to analyze threats and define security needs.
+•	Time: Adding security requirements from the beginning extends planning, as stakeholders need time to analyze threats and define security needs.
 
-**•	Resources: **Requires team members with knowledge in security analysis, potentially increasing staff hours.
+•	Resources: Requires team members with knowledge in security analysis, potentially increasing staff hours.
 
 •	Business Logic Impact: Modifying business logic to include security requirements may impact original project scope and require adjustments.
 
 •	Financial Burden: Upfront costs for additional security expertise, but this investment reduces downstream costs for fixing security issues.
   
-   **Cost-effective Approach: **
+   **Cost-effective Approach:**
 
 •	Leverage security templates for requirement gathering (e.g., OWASP ASVS) to streamline the process.
 
@@ -28,7 +29,7 @@ Integrating security objectives into each phase of the SDLC incurs various costs
 
 •	Financial Burden: Investing in security-oriented design tools and consultants can raise costs, but mitigates future risks and reduces long-term expenses.
    
-   **Cost-effective Approach: **
+   **Cost-effective Approach:**
 •	Use automated threat modeling tools that integrate into design software, reducing the need for extensive manual reviews.
 
 •	Crosstrain team members in secure design to avoid hiring additional resources, lowering costs by building internal expertise over time.
@@ -42,7 +43,8 @@ Integrating security objectives into each phase of the SDLC incurs various costs
 
 •	Financial Burden: Investing in secure development tools and training can be costly, but it reduces the chance of severe vulnerabilities, saving money on post-deployment fixes.
    
-   **Cost-effective Approach:**
+  **Cost-effective Approach:**
+  
 •	Utilize free or opensource SAST tools like SonarQube or OWASP Dependency-Check where possible to reduce licensing costs.
 •	Automate code reviews and standardize secure coding practices across the team, reducing developer training time and enforcing consistency.
 
@@ -68,6 +70,7 @@ Integrating security objectives into each phase of the SDLC incurs various costs
 •	Business Logic Impact: Post-deployment security fixes might require business logic modifications, potentially disrupting user experience.
 
 •	Financial Burden: Costs include maintaining security licenses, running routine audits, and patching/updating software.
+
    **Cost-effective Approach:**
 •	Implement automated patch management systems and monitor for new vulnerabilities in real-time, reducing response time and manual labor.
 
