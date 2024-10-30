@@ -81,9 +81,13 @@ Threat modeling has become a popular technique to help system designers think ab
 To develop a threat model, we recommend taking a simple approach that follows the NIST 800-30 standard for risk assessment. This approach involves:
 
 •	Decomposing the application – use a process of manual inspection to understand how the application works, its assets, functionality, and connectivity.
+
 •	Defining and classifying the assets – classify the assets into tangible and intangible assets and rank them according to business importance.
+
 •	Exploring potential vulnerabilities - whether technical, operational, or managerial.
+
 •	Exploring potential threats – develop a realistic view of potential attack vectors from an attacker’s perspective by using threat scenarios or attack trees.
+
 •	Creating mitigation strategies – develop mitigating controls for each of the threats deemed to be realistic.
 
 
@@ -234,27 +238,42 @@ From the perspective of functional security requirements, the applicable standar
 In order to validate security requirements with security tests, security requirements need to be function-driven. They need to highlight the expected functionality (the what) and imply the implementation (the how). Examples of high-level security design requirements for authentication can be:
 
 •	Protect user credentials or shared secrets in transit and in storage.
+
 •	Mask any confidential data in display (e.g., passwords, accounts).
+
 •	Lock the user account after a certain number of failed log in attempts.
+
 •	Do not show specific validation errors to the user as a result of a failed log on.
+
 •	Only allow passwords that are alphanumeric, include special characters, and are a minimum ten characters in length, to limit the attack surface.
+
 •	Allow for password change functionality only to authenticated users by validating the old password, the new password, and the user’s answer to the challenge question, to prevent brute forcing of a password via password change.
-•	The password reset form should validate the user’s username and the user’s registered email before sending the temporary password to the user via email. The temporary password issued should be a one-time password. A link to the password reset web page will be sent to the user. The password reset web page should validate the user’s temporary password, the new password, as well as the user’s answer to the challenge question.
+
+•	The password reset form should validate the user’s username and the user’s registered email before sending the temporary password to the user via email. The temporary password issued should be a one-time password. A link to the password reset web page will be sent to the user.
+
+The password reset web page should validate the user’s temporary password, the new password, as well as the user’s answer to the challenge question.
 
 ### Risk-Driven Security Requirements
 Security tests must also be risk-driven. They need to validate the application for unexpected behavior, or negative requirements.
 Examples of negative requirements are:
 •	The application should not allow for the data to be altered or destroyed.
+
 •	The application should not be compromised or misused for unauthorized financial transactions by a malicious user.
+
 Negative requirements are more difficult to test, because there is no expected behavior to look for. Looking for expected behavior to suit the above requirements might require a threat analyst to unrealistically come up with unforeseeable input conditions, causes, and effects. Hence, security testing needs to be driven by risk analysis and threat modeling. The key is to document the threat scenarios, and the functionality of the countermeasure as a factor to mitigate a threat.
 For example, in the case of authentication controls, the following security requirements can be documented from the threats and countermeasures perspective:
 
 
 •	Encrypt authentication data in storage and transit to mitigate risk of information disclosure and authentication protocol attacks.
+
 •	Encrypt passwords using non-reversible encryption such as using a digest (e.g., HASH) and a seed to prevent dictionary attacks.
+
 •	Lock out accounts after reaching a log on failure threshold and enforce password complexity to mitigate risk of brute force password attacks.
+
 •	Display generic error messages upon validation of credentials to mitigate risk of account harvesting or enumeration.
+
 •	Mutually authenticate client and server to prevent non-repudiation and Manipulator In the Middle (MiTM) attacks.
+
 Threat modeling tools such as threat trees and attack libraries can be useful to derive the negative test scenarios. A threat tree will assume a root attack (e.g., attacker might be able to read other users’ messages) and identify different exploits of security controls (e.g., data validation fails because of a SQL injection vulnerability) and necessary countermeasures (e.g., implement data validation and parametrized queries) that could be validated to be effective in mitigating such attacks.
 
 
@@ -318,12 +337,19 @@ From the developer’s perspective, the main objective of security tests is to v
 The security requirements that developers have to follow should be documented in secure coding standards and validated with static and dynamic analysis. If the unit test activity follows a secure code review, unit tests can validate that code changes required by secure code reviews are properly implemented. Both secure code reviews and source code analysis through source code analysis tools can help developers in identifying security issues in source code as it is developed. By using unit tests and dynamic analysis (e.g., debugging) developers can validate the security functionality of components as well as verify that the countermeasures being developed mitigate any security risks previously identified through threat modeling and source code analysis.
 
 
-A good practice for developers is to build security test cases as a generic security test suite that is part of the existing unit testing framework. A generic security test suite could be derived from previously defined use and misuse cases to security test functions, methods and classes. A generic security test suite might include security test cases to validate both positive and negative requirements for security controls such as:
+A good practice for developers is to build security test cases as a generic security test suite that is part of the existing unit testing framework. A generic security test suite could be derived from previously defined use and misuse cases to security test functions, methods and classes. A generic security test suite might include security test cases to validate both positive and negative 
+requirements for security controls such as:
 •	Identity, authentication & access control
+
+
 •	Input validation & encoding
+
 •	Encryption
+
 •	User and session management
+
 •	Error and exception handling
+
 •	Auditing and logging
 
 
@@ -379,25 +405,40 @@ Security test metrics can support security risk, cost, and defect management ana
 
 
 •	Reducing the overall number of vulnerabilities by 30%.
+
 •	Fixing security issues by a certain deadline (e.g., before beta release).
+
 Security test data can be absolute, such as the number of vulnerabilities detected during manual code review, as well as comparative, such as the number of vulnerabilities detected in code reviews compared to penetration tests. To answer questions about the quality of the security process, it is important to determine a baseline for what could be considered acceptable and good.
 Security test data can also support specific objectives of the security analysis. These objectives could be compliance with security regulations and information security standards, management of security processes, the identification of security root causes and process improvements, and security cost benefit analysis.
 
 
 When security test data is reported, it has to provide metrics to support the analysis. The scope of the analysis is the interpretation of test data to find clues about the security of the software being produced, as well as the effectiveness of the process.
 Some examples of clues supported by security test data can be:
+
 •	Are vulnerabilities reduced to an acceptable level for release?
+
 •	How does the security quality of this product compare with similar software products?
+
 •	Are all security test requirements being met?
+
 •	What are the major root causes of security issues?
+
 •	How numerous are security flaws compared to security bugs?
+
 •	Which security activity is most effective in finding vulnerabilities?
+
 •	Which team is more productive in fixing security defects and vulnerabilities?
+
 •	What percentage of overall vulnerabilities are high risk?
+
 •	Which tools are most effective in detecting security vulnerabilities?
+
 •	What kind of security tests are most effective in finding vulnerabilities (e.g., white-box vs. black-box) tests?
+
 •	How many security issues are found during secure code reviews?
+
 •	How many security issues are found during secure design reviews?
+
 In order to make a sound judgment using the testing data, it is important to have a good understanding of the testing process as well as the testing tools. A tool taxonomy should be adopted to decide which security tools to use. Security tools can be qualified as being good at finding common, known vulnerabilities, when targeting different artifacts.
 It is important to note that unknown security issues are not tested. The fact that a security test is clear of issues does not mean that the software or application is good.
 
@@ -412,11 +453,17 @@ The security posture of an application can be characterized from the perspective
 Vulnerabilities can be classified according to different criteria. The most commonly used vulnerability severity metric is the Common Vulnerability Scoring System (CVSS), a standard maintained by the Forum of Incident Response and Security Teams (FIRST).
 When reporting security test data, the best practice is to include the following information:
 •	a categorization of each vulnerability by type;
+
 •	the security threat that each issue is exposed to;
+
 •	the root cause of each security issue, such as the bug or flaw;
+
 •	each testing technique used to find the issues;
+
 •	the remediation, or countermeasure, for each vulnerability; and
+
 •	the severity rating of each vulnerability (e.g., high, medium, low, or CVSS score).
+
 By describing what the security threat is, it will be possible to understand if and why the mitigation control is ineffective in mitigating the threat.
 
 Reporting the root cause of the issue can help pinpoint what needs to be fixed. In the case of white-box testing, for example, the software security root cause of the vulnerability will be the offending source code.
