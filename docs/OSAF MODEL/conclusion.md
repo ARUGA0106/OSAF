@@ -1,6 +1,6 @@
 ### Conclusion(s)
 
-The article “SSDLC is the King: Spotlight on How Secure Software Development Lifecycle Enhances Web Application Security” presents a comprehensive framework for integrating security into the software development lifecycle (SDLC). By emphasizing the significance of a Security Enhanced SDLC (SSDLC), it illustrates how adherence to established standards and frameworks—such as the OWASP Top 10, SANS Top 25, and WSTG—can significantly mitigate risks associated with web application vulnerabilities.
+This knowadge-based documentation “Software Security Framework development model. (OSAF-Model)": Spotlight on How Secure Software Development Lifecycle Enhances Web Application Security” presents a comprehensive framework for integrating security into the software development lifecycle (SDLC). By emphasizing the significance of a Security Enhanced SDLC (SSDLC), it illustrates how adherence to established standards and frameworks—such as the OWASP Top 10, SANS Top 25, and WSTG—can significantly mitigate risks associated with web application vulnerabilities.
 
 ### Covered Aspects
 Throughout this article, we have explored:
@@ -11,7 +11,7 @@ Throughout this article, we have explored:
 - **SSDLC Methodology:** Provided a thorough breakdown of how to integrate security into each SDLC phase, offering actionable checklists derived from leading security frameworks.
 
 ### What Is Not Covered
-While the article addresses essential aspects of SSDLC, several areas warrant further exploration:
+While the Model addresses essential aspects of SSDLC, several areas warrant further exploration:
 
 - **Real-World Case Studies:** Specific examples of organizations successfully implementing SSDLC could provide practical insights.
 - **Emerging Technologies:** The impact of new technologies, such as DevSecOps, AI in security testing, and cloud security practices, was not addressed.
