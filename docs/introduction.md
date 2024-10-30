@@ -1,4 +1,4 @@
-# The Open Software Alliance Foundation (OSAF) - Software Security Framework development model. (OSAF-Model).
+## The Open Software Alliance Foundation (OSAF) - Software Security Framework development model. (OSAF-Model).
 
 ## Security Enhanced SDLC: The SSDLC Methodology
 ###  Spotlight on How the Secure Software Development Lifecycle Enhances Web Application Security.
@@ -8,11 +8,18 @@ DevSecOps Engineer & Solution Architect.
  
  ## The Rising Tide of Web Security Threats
 As digital applications continue to expand and connect users worldwide, web applications have become prime targets for cyber threats. From data breaches and unauthorized access to injection attacks and zero-day exploits, web security threats are pervasive, with evolving techniques posing constant challenges to application security. These threats have spurred the development of multiple frameworks and standards aimed at fortifying applications against known and emerging vulnerabilities.
+
+
 To guide secure development, several key knowledge-based standards exist. The OWASP Top 10 is a widely recognized list of the most critical security risks for web applications, such as injection, broken authentication, and sensitive data exposure, offering developers insights into how to mitigate these issues. SANS 25 (or the CWE/SANS Top 25) focuses on the most dangerous software errors, from improper input validation to poor exception handling, which could lead to severe vulnerabilities. Projects like the OASIS Web Application Security (WAS) and the Penetration Testing Execution Standard (PTES) aim to provide thorough guidelines for assessing and testing security at each phase of development.
+
+
 Another essential resource, the Web Security Testing Guide (WSTG), produced by the OWASP project, provides a comprehensive methodology for testing the security of web applications, covering everything from client-side checks to server configuration and beyond. 
 However, for early-stage developers, the sheer number of frameworks, checklists, and testing methods can be overwhelming and even contradictory, with each framework emphasizing different security phases, methods, and terminology. This multiplicity of approaches often presents a barrier to effective implementation, particularly when attempting to establish a foundational security approach within the software development lifecycle.
- Purpose of this Article
-The purpose of this paper is to present a cohesive roadmap for integrating security into the development process through a Secure Software Development Lifecycle (SSDLC). By reviewing the most impactful frameworks and distilling essential tools, techniques, and methods, this paper seeks to streamline the adoption of SSDLC practices. The goal is to guide developers—especially those new to security—on effectively incorporating secure practices into the SDLC, creating a robust foundation to defend against modern threats.
+
+ Purpose of this Model
+The purpose of this Model is to present a cohesive roadmap for integrating security into the development process through a Secure Software Development Lifecycle (SSDLC). By reviewing the most impactful frameworks and distilling essential tools, techniques, and methods, this paper seeks to streamline the adoption of SSDLC practices. The goal is to guide developers—especially those new to security—on effectively incorporating secure practices into the SDLC, creating a robust foundation to defend against modern threats.
+
+
  Overview of Key Security Frameworks in SDLC
 1.	**OWASP Top 10:** Focuses on identifying the most critical web security risks, providing an accessible entry point to common vulnerabilities and best practices to avoid them.
 2.	**SANS/CWE Top 25:** Emphasizes software vulnerabilities that have severe impacts on systems, concentrating on coding errors that can lead to critical security flaws.
