@@ -17,6 +17,7 @@ The initial phase focuses on gathering business, technical, and functional requi
 During the design phase, the architecture and detailed design for the software are developed. Decisions on software structure, components, and interfaces are made here.
 
 **Security Approach:**
+
 •	Secure Architecture Design: Ensure that the architecture is resilient to known threats. This includes setting up boundaries between components, minimizing trust zones, and planning for data encryption, network isolation, and API security.
 
 •	Threat Modeling (Revisited): Refine threat models based on the detailed design, highlighting critical areas that require security controls.
@@ -38,6 +39,7 @@ The actual code for the software is written during this phase. The focus here is
 The testing phase verifies that the software meets the defined requirements and functions correctly. Security testing is crucial here to identify potential weaknesses before deployment.
 
 **Security Approach:**
+
 •	Penetration Testing: Perform penetration tests (using frameworks like PTES) to evaluate the application’s defenses against real-world attacks. Include tests for authentication, data protection, and access control.
 
 •	Benchmark & Checklist-Based Testing: Use benchmarks like the OWASP Application Security Verification Standard (ASVS) and checklists (e.g., Web Security Testing Guide  WSTG) to systematically test for vulnerabilities.
@@ -50,6 +52,7 @@ The testing phase verifies that the software meets the defined requirements and 
 In this final phase, the application is deployed to a production environment and regularly maintained to ensure stability and security over time.
 
 **Security Approach:**
+
 •	Secure Deployment: Ensure secure configurations during deployment (e.g., disabling unnecessary services, securing databases, using HTTPS). Automated deployment scripts with secure settings should be used to prevent human error.
 
 •	Ongoing Monitoring and Testing: Continuously monitor the application for new threats and vulnerabilities. Tools like SIEM (Security Information and Event Management) systems can alert to suspicious activities.
