@@ -41,7 +41,7 @@ This document is designed to help organizations understand what comprises a test
 When to Test?
 Most people today don’t test software until it has already been created and is in the deployment phase of its life cycle (i.e., code has been created and instantiated into a working web application). This is generally a very ineffective and cost-prohibitive practice. One of the best methods to prevent security bugs from appearing in production applications is to improve the Software Development Life Cycle (SDLC) by including security in each of its phases. An SDLC is a structure imposed on the development of software artifacts. If an SDLC is not currently being used in your environment, it is time to pick one! The following figure shows a generic SDLC model as well as the (estimated) increasing cost of fixing security bugs in such a model.
  
-**Figure 2-1: Generic SDLC Model
+![Figure 2-1: Generic SDLC Model](img/img1.png)
 Companies should inspect their overall SDLC to ensure that security is an integral part of the development process. SDLCs should include security tests to ensure security is adequately covered and controls are effective throughout the development process.
 What to Test?
 It can be helpful to think of software development as a combination of people, process, and technology. If these are the factors that “create” software, then it is logical that these are the factors that must be tested. Today most people generally test the technology or the software itself.
@@ -62,5 +62,6 @@ Security professionals have come to realize the fallacy of the patch-and-penetra
 Vulnerability studies such as Symantec’s Internet Security Threat Report have shown that with the reaction time of attackers worldwide, the typical window of vulnerability does not provide enough time for patch installation, since the time between a vulnerability being uncovered and an automated attack against it being developed and released is decreasing every year.
 There are several incorrect assumptions in the patch-and-penetrate model. Many users believe that patches interfere with normal operations or might break existing applications. It is also incorrect to assume that all users are aware of newly released patches. Consequently, not all users of a product will apply patches, either because they think patching may interfere with how the software works, or because they lack knowledge about the existence of the patch.
  
-Figure 2-2: Window of Vulnerability
+![Figure 2-2: Window of Vulnerability](img/vulnerability.png)
+
 It is essential to build security into the Software Development Life Cycle (SDLC) to prevent reoccurring security problems within an application. Developers can build security into the SDLC by developing standards, policies, and guidelines that fit and work within the development methodology. Threat modeling and other techniques should be used to help assign appropriate resources to those parts of a system that are most at risk.
