@@ -3,14 +3,6 @@
 
 The **OSAF-Model** is a Knowladge-based security-focused software development framework founded by Godwin S. Aruga, a DevSecOps Engineer, Cybersecurity Analyst, and Solution Architect, under the Cybershield OSAF Project. This model is designed to enhance software security across the SDLC by integrating security objectives, industry standards, and best practices from OWASP, SANS, and WSTG.
 
-## Table of Contents
-- [Introduction](docs/introduction.md)
-- [Owasp Concept](docs/OWASP_concept.md)
-  - [secuure SDLC](docs/Secure-SDLC.md)
-  - [Cost analysis](docs/cost analysis.md)
-  - [OSAF-Model phase1](docs/OSAF MODEL/Phase 1.md)
-
-
 ## Getting Started
 Learn how to integrate the OSAF-Model in your projects [here](docs/Introduction.md).
 
@@ -26,11 +18,7 @@ The OSAF-Model includes:
 Licensed under [LICENSE.md](LICENSE.md).
 
 
-
-
-
 # OSAF
-
 
 ### Open Software Alliance Foundation (OSAF) - Software Security Framework Development Model (OSAF-Model)
 
